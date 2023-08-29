@@ -17,12 +17,12 @@ const RightSideBar = () => {
 
         <ul>
            <li className="pt-[100px] font-bold">New Links</li>
-            <li>Home</li>
-            <li>Search</li>
+            {/* <li>Home</li> */}
+            {/* <li>Search</li> */}
             <li>Activity</li>
             <li>Create Thread</li>
             <li>Communities</li>
-            <li>Profile</li>
+            {/* <li>Profile</li> */}
           </ul>
 
 

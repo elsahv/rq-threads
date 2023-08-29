@@ -3,7 +3,7 @@ import content from "../data";
 
 const ThreadCards = () => {
   return (
-    <section className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-5">
+    <section className=" grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-5">
       {content.map((item, index) => (
         <div className="bg-teal rounded-lg" key={index}>
           <div className="underline pl-5 pt-2 text-seasalt">tags</div>
