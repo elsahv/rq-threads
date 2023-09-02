@@ -4,7 +4,7 @@
 // import { JakeImg } from "../assets/jake.jpg";
 const RightSideBar = () => {
   return (
-    <div className="pb-5 bg-teal-300 border-l-2 border-black">
+    <div className="h-full pb-5 border-l-2 border-black">
       <div className="flex flex-col pt-5 pl-3">
         <h2 className="mt-5 font-bold text-3xl">Welcome to the Running Quail!</h2>
         <div className="p-1 mr-3 mt-[20px]">
