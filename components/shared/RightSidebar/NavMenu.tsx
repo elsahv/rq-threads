@@ -1,21 +1,24 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export const navMenu = [
   {
-    imgURL: "/assets/home.svg",
+    imgURL: "/assets/home.svg",    //todo: IMPLEMENT??
     route: "/",
-    label: "New Links",
+    label: "Home",
   },
   {
-    imgURL: "/assets/search.svg",
-    route: "/search",
+    imgURL: "/assets/search.svg",   //todo: IMPLEMENT??
+    route: "/activity",
     label: "Activity",
   },
   {
-    imgURL: "/assets/heart.svg",
-    route: "/activity",
+    imgURL: "/assets/heart.svg",   //todo: IMPLEMENT??
+    route: "/create-thread",
     label: "Create Thread",
   },
   {
-    imgURL: "/assets/community.svg",
+    imgURL: "/assets/community.svg",   //todo: IMPLEMENT??
     route: "/communities",
     label: "Communities",
   },
@@ -23,12 +26,19 @@ export const navMenu = [
 
 const NavMenu = () => {
   return (
-    <div className="pt-[100px]"> 
-    {navMenu.map((item, index) => (
-       <div key={index}> 
-          <h2>{item.label}</h2>
-       </div>
-    ))}
+    <div className="pt-[100px] text-IP"> 
+    {navMenu.map((link) => (
+ 
+     <Link
+      href={link.route}
+      key={link.label}
+      >
+      <div className="font-bold text-3xl my-1 py-1">{link.label}</div>
+     </Link> 
+   
+        
+   
+   ))}
     </div>
   
   )

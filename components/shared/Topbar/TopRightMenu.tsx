@@ -1,20 +1,26 @@
+import Link from 'next/link'
 import React from 'react'
 
 
 export const trMenuLinks = [
+    // {
+    //   route: "/",
+    //   label: 'Home',
+    // },
     {
-      label: 'Home',
+      route: "/profile",
+      label: 'Profile',
     },
     {
-        label: 'Profile',
-    },
-    {
-        label: 'Search',
+      route: "/search",
+      label: 'Search',
       },
       {
-          label: 'About',
+        route: "/about",
+        label: 'About',
       },
       {
+        route: "/contact",
         label: 'Contact',
       },
 ]
@@ -22,13 +28,14 @@ export const trMenuLinks = [
 
 const TopRightMenu = () => {
   return (
-    <div className="flex justify-end items-end text-3xl py-3">
-      {trMenuLinks.map((item, index) => (
-        <div key={index}>
-            <h2 className="mx-3">
-            {item.label}
-                </h2>  
-        </div>
+    <div className="flex justify-end items-end text-3xl py-3 text-IP">
+      {trMenuLinks.map((link) => (
+        <Link
+        href={link.route}
+        key={link.label}
+        >
+        <div className="mx-3">{link.label}</div>
+        </Link> 
      ))}
     </div>
   )

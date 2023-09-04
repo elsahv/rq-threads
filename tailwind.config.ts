@@ -181,6 +181,7 @@ module.exports = {
         seasalt: "#f9f9f9",
         test1: "pink",
         test2: "lightgreen",
+        IP: "#ff5349"
         // "primary-500": "#877EFF",
         // "secondary-500": "#FFB620",
         // blue: "#0095F6",
