@@ -6,7 +6,6 @@ const page = () => {
     <div className="p-2">
       {/* //? ADD FILTER BTNS?? */}
       <ThreadCards />
-   
     </div>
   )
 }
