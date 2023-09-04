@@ -1,3 +1,6 @@
+- CURRENTLY WORKING ON:
+- refactor header, ref threads
+
 Become a part in the running quail project!
 
 https://www.youtube.com/watch?v=O5cmLDVTgAs&t=15005s
