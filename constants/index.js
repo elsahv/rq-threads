@@ -1,30 +1,49 @@
 // */ RIGHTBAR CONSTANTS
 
-// export const rightSidebarNavMenu = [
-//   {
-//     imgURL: "/assets/home.svg",
-//     route: "/",
-//     label: "New Links",
-//   },
-//   {
-//     imgURL: "/assets/search.svg",
-//     route: "/search",
-//     label: "Activity",
-//   },
-//   {
-//     imgURL: "/assets/heart.svg",
-//     route: "/activity",
-//     label: "Create Thread",
-//   },
-//   {
-//     imgURL: "/assets/community.svg",
-//     route: "/communities",
-//     label: "Communities",
-//   },
-// ];
+export const navMenu = [
+  {
+    imgURL: "/assets/home.svg",
+    route: "/",
+    label: "Home",
+  },
+  {
+    imgURL: "/assets/search.svg",
+    route: "/activity",
+    label: "Activity",
+  },
+  {
+    imgURL: "/assets/heart.svg",
+    route: "/create-thread",
+    label: "Create Thread",
+  },
+  {
+    imgURL: "/assets/community.svg",
+    route: "/communities",
+    label: "Communities",
+  },
+];
 
-export const rightSidebarCategoryLinks = [
-  { value: "threads", label: "Threads", icon: "/assets/reply.svg" },
-  { value: "replies", label: "Replies", icon: "/assets/members.svg" },
-  { value: "tagged", label: "Tagged", icon: "/assets/tag.svg" },
+// */ TOP RIGHTBAR CONSTANTS
+
+export const trMenuLinks = [
+  // {
+  //   route: "/",
+  //   label: 'Home',
+  // },
+  {
+    route: "/profile",
+    label: "Profile",
+  },
+  {
+    route: "/search",
+    label: "Search",
+  },
+  {
+    route: "/about",
+    label: "About",
+  },
+  {
+    route: "/contact",
+    label: "Contact",
+  },
 ];

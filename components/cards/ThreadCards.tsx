@@ -62,12 +62,11 @@ const cardContent = [
 
 const ThreadCards = () => {
   return (
-    <section className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mr-5 px-[25px] py-[50px]">
+    <section className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 2xl:mr-5 mr-1  2xl:px-[25px] px-2 py-[50px]">
       {cardContent.map((item, index) => (
         <div className="bg-teal rounded-lg border border-black" key={index}>
-          <div className="underline pl-5 pt-2 text-seasalt">tags</div>
-
-          <Image className="py-1 px-5 h-[350px]" src={item.image} alt="" />
+          <div className="underline 2xl:pl-5 pl-3 pt-2 text-seasalt">tags</div>
+          <Image className="py-1 2xl:px-5 px-3 2xl:h-[350px] md:h-[250px] h-[200px]" src={item.image} alt="" />
           <div className="px-5 pb-5">
             <h2 className="text-lavender font-bold pb-2 mt-2">{item.title}</h2>
             <p className="pb-5">{item.paragraph}</p>

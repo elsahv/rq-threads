@@ -1,33 +1,32 @@
 import AccountProfile from '@/components/forms/AccountProfile'
-import {currentUser} from '@clerk/nextjs'
+import { currentUser} from '@clerk/nextjs'
 
-
-
-
-async function page () {
-
+async function Onboarding () { 
   const user = await currentUser()
+
   const userInfo = {}
 
   const userData = {
-   id: user?.id,
-   ObjectId: userInfo?._id,
-   username: userInfo?.username || user?.username,
-   name: userInfo?.name || user?.firstName || "",
-   bio: userInfo?.bio || "",
-   image: userInfo?.image || user?.imageUrl,
+    id: user?.id,
+    objectId: userInfo?._id,
+    username: userInfo?.username || user?.username,
+    name: userInfo?.name || user?.firstName || "",
+    bio: userInfo?.bio || "",
+    image: userInfo?.image || user?.imageUrl,
   }
 
-
   return (
-    <main>
-      <h2 className="text-teal-200">Onboarding</h2>
-      <p className="text-teal-200">complete your profile now to use threads</p>
-    <section className="mt-5 bg-teal-300 p-10">
-      <AccountProfile user={userData} btnTitle="continue"/>
-    </section>
+    <main className="mx-auto flex max-w-3xl flex-col justify-start px-10 py-20">
+      <h1 className="font-bold">Onboarding</h1>
+      <p className="mt-3 text-base-regular text-light-2">complete your profile now to use RQ</p>  
+      <section className="mt-9 bg-test2 p-10 border border-teal rounded">
+        <AccountProfile
+         user={userData}
+         btnTitle="Continue"
+        />
+      </section>
     </main>
   )
 }
 
-export default page
+export default Onboarding
